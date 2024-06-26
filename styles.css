@@ -1,0 +1,927 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+
+}
+
+#form {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Box shadow */
+  padding: 20px;
+  /* Add padding for box shadow */
+  border-radius: 8px;
+  /* Optional: Add border radius for rounded corners */
+}
+
+.heading1 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+form {
+
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.gp {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  max-width: fit-content;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#dist {
+  width: 150px;
+  margin-bottom: 14px;
+}
+
+#state {
+  width: 150px;
+  margin-bottom: 14px;
+}
+
+#country {
+  width: 150px;
+  margin-bottom: 14px;
+}
+
+.clg_loc {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.sed {
+  margin-bottom: 1.2rem;
+}
+
+.common {
+  width: 100% !important;
+  margin-bottom: 1.5rem;
+}
+
+.textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.achivbtn,
+.projbtn {
+  width: fit-content;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.btncontainer {
+  display: flex;
+  gap: 20px;
+}
+
+.projinfoText {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.addPoint {
+  margin-top: 10px;
+  padding: 7px;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.remPoint {
+  margin-top: 10px;
+  padding: 7px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.ProjName {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.tech_stack_div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+.commonTechStack {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.projstartdate {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.addTechStack {
+  margin-top: 10px;
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.remTechStack {
+  margin-top: 10px;
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.commonprojectinput {
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+
+.project_point_div {
+  padding-left: 30px;
+}
+
+
+.commonprojpoint {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.addPoint {
+  margin-left: 30px;
+}
+
+.ProjUrlLabel {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.commonprojecturl {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Project section */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+.project_section {
+  margin: 20px auto;
+  max-width: 900px;
+  /* Increased width */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  /* Added clearfix */
+}
+
+label,
+input,
+button,
+h4 {
+  margin-bottom: 10px;
+}
+
+input,
+button {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input[type="date"] {
+  /* Style date input */
+  padding: 6px 8px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.addPoint,
+button.addTechStack,
+button.add_proj {
+  background-color: #28a745;
+  /* Green */
+  color: white;
+}
+
+button.addPoint:hover,
+button.addTechStack:hover,
+button.add_proj:hover {
+  background-color: #218838;
+}
+
+button.remPoint,
+button.remTechStack,
+button.rem_proj {
+  background-color: #dc3545;
+  /* Red */
+  color: white;
+}
+
+button.remPoint:hover,
+button.remTechStack:hover,
+button.rem_proj:hover {
+  background-color: #c82333;
+}
+
+.proj_gap {
+  margin-top: 10px;
+}
+
+.proj_btn {
+  text-align: center;
+}
+
+input[type="date"] {
+  padding: 8px;
+  /* Adjust padding for date input */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: calc(100% - 18px);
+  /* Adjust width to accommodate padding and border */
+  box-sizing: border-box;
+  /* Ensure padding and border are included in the width */
+}
+
+/* Project section end */
+.ExpName {
+  font-weight: bolder;
+}
+
+.commonexperienceinput {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.expstartdate {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.expenddate {
+  margin-bottom: 10px;
+}
+
+.companyname {
+  display: block;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.commoncompanyname {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.remotejob {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  margin-right: 10px;
+}
+
+.or {
+  text-align: center;
+  font-size: large;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.d1 {
+  margin-bottom: 10px;
+}
+
+.d1>input {
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.d2 {
+  margin-bottom: 10px;
+}
+
+.d2>input {
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.d3 {
+  margin-bottom: 10px;
+}
+
+.d3>input {
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+
+.detailsLabel {
+  display: block;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.detailsContainer {
+  padding-left: 30px;
+}
+
+.detailsContainer input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.addDetailBtn {
+  padding: 5px;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.remDetailBtn {
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.experience_btn {
+  margin-bottom: 20px;
+}
+
+.add_experience {
+  margin-bottom: 20px;
+}
+
+.rem_experience {
+  margin-bottom: 20px;
+}
+
+/* Experience section */
+/* Center the section */
+.experience_section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Style the heading */
+.experience_section h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style the paragraph */
+.experience_section p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Style the experience container */
+.experience_info {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style the input fields */
+.experience_info input[type="text"],
+.experience_info input[type="date"],
+.experience_info input[type="checkbox"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Style the buttons */
+.experience_btn button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.experience_btn button:hover {
+  background-color: #0056b3;
+}
+
+/* Increase the padding and margin for the container */
+.experience_info {
+  border: 1px solid #ccc;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+/* Style the label for checkboxes */
+.experience_info label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Style the checkbox */
+.experience_info input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* Adjust padding and margin for the input fields */
+.experience_info input[type="text"],
+.experience_info input[type="date"] {
+  width: calc(100% - 20px);
+  /* Adjust based on checkbox width */
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Style the Add Detail button */
+.addDetailBtn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #28a745;
+  /* Green */
+  color: #fff;
+  border-radius: 5px;
+}
+
+.addDetailBtn:hover {
+  background-color: #218838;
+  /* Darker green on hover */
+}
+
+/* Style the Remove Detail button */
+.remDetailBtn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #dc3545;
+  /* Red */
+  color: #fff;
+  border-radius: 5px;
+}
+
+.remDetailBtn:hover {
+  background-color: #c82333;
+  /* Darker red on hover */
+}
+
+/* Style the Add Experience button */
+.add_experience {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #28a745 !important;
+  /* Green */
+  color: #fff;
+  border-radius: 5px;
+}
+
+.add_experience:hover {
+  background-color: #218838 !important;
+  /* Darker green on hover */
+}
+
+/* Style the Remove Experience button */
+.rem_experience {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #dc3545 !important;
+  /* Red */
+  color: #fff;
+  border-radius: 5px;
+}
+
+.rem_experience:hover {
+  background-color: #c82333 !important;
+  /* Darker red on hover */
+}
+
+/* Style the optional section message */
+.pp {
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 20px;
+  color: #1d1d1d;
+
+  border: 1px solid #ddd;
+
+  padding: 10px 20px;
+
+  border-radius: 5px;
+
+  background-color: #f9f9f9;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+/* End experience setion */
+/* Skill section */
+
+/* Container styles */
+.language_section {
+  margin-bottom: 20px;
+}
+
+/* Title styles */
+.language_section h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Input styles */
+.commonlanginput,
+.commonframeinput,
+.commontoolinput {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 13px;
+}
+
+/* Button styles */
+.achivbtn {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #28a745 !important;
+  color: white;
+}
+
+.achivbtn:hover {
+  background-color: #218838 !important;
+}
+
+.remove {
+  background-color: #dc3545 !important;
+}
+
+.remove:hover {
+  background-color: #c82333 !important;
+}
+
+/* Center align the section */
+.language_section {
+  text-align: center;
+}
+
+/* Add some spacing between elements */
+.language_section>div {
+  margin-bottom: 10px;
+}
+
+/* Add button styles */
+.achivbtn.add_lang,
+.achivbtn.add_frameworks,
+.achivbtn.add_tools {
+  background-color: #28a745 !important;
+  /* Green color for Add buttons */
+}
+
+/* Remove button styles */
+.achivbtn.rem_lang,
+.achivbtn.rem_frameworks,
+.achivbtn.rem_tools {
+  background-color: #dc3545 !important;
+  /* Red color for Remove buttons */
+}
+
+.language_section {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Box shadow */
+  padding: 20px;
+  /* Add padding for box shadow */
+  border-radius: 8px;
+  /* Optional: Add border radius for rounded corners */
+}
+
+/* end skill section */
+
+/* Achievement section */
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  /* Larger font size for the main heading */
+  background-color: #007bff;
+  /* Blue background for the heading */
+  color: white;
+  /* White text color */
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  margin: 0;
+}
+
+h4 {
+  text-align: center;
+  color: #555;
+  font-size: 1.5rem;
+  /* Appropriate font size for the sub-heading */
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.achivcontainer {
+  margin-top: 20px;
+}
+
+.achievement {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #e9ecef;
+  /* Light grey background for each achievement */
+}
+
+.achievement input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* Ensure padding and border are included in the width */
+  font-size: 1rem;
+  /* Set a readable font size */
+}
+
+.achievement p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 1rem;
+  /* Set a readable font size */
+}
+
+.btncontainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.achivbtn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  /* Set a readable font size */
+  cursor: pointer;
+}
+
+.achivbtn.remove {
+  background-color: #dc3545;
+}
+
+.achivbtn:hover {
+  opacity: 0.9;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.5rem;
+    /* Smaller font size for smaller screens */
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    /* Smaller font size for smaller screens */
+  }
+
+  .achievement input {
+    font-size: 0.9rem;
+    /* Smaller font size for smaller screens */
+  }
+
+  .achievement p {
+    font-size: 0.9rem;
+    /* Smaller font size for smaller screens */
+  }
+
+  .achivbtn {
+    font-size: 0.9rem;
+    /* Smaller font size for smaller screens */
+  }
+}
+
+/* Achievement section End */
+
+
+
+/* Certificate section */
+
+.certibtn {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.certibtn:hover {
+  background-color: #45a049;
+}
+
+.certiremove {
+  background-color: #dc3545
+}
+
+.certiremove:hover {
+  background-color: #c82333
+}
+
+.certificate {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.certificate label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.certificate input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* submit button */
+.btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  /* Blue background color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+
+.codingprofilescontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.codingprofile {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.codingprofile label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+}
+
+.codingprofile input[type="text"],
+.codingprofile input[type="url"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.profilebtncontainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.profilebtn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.profilebtn:hover {
+  background-color: #0056b3;
+}
+
+.profileremove {
+  background-color: #dc3545;
+}
+
+.profileremove:hover {
+  background-color: #c82333;
+}
+
+.profileadd {
+  background-color: #28a745
+}
+
+.profileadd:hover {
+  background-color: #218838;
+}

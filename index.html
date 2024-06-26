@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <h1 class="heading1">Let's Build Resume</h1>
+
+  <form id="form" action="item.html" method="get">
+    <label for="fname">Enter Your Name</label>
+    <input type="text" name="fname" id="fname" class="gp" placeholder="John Doe" required>
+    <label for="phone">Enter Your Phone No</label>
+    <input type="text" name="phone" id="phone" class="gp" placeholder="9999999999" required>
+
+
+    <label for="ename">Enter Your Email</label>
+    <input type="email" name="ename" id="ename" class="gp" placeholder="abc@gmail.com" required>
+
+    <label for="github">Enter Your Github Link</label>
+    <input type="url" name="github" id="github" class="gp" placeholder="https://github.com/rko0211" required>
+
+    <label for="linkdin">Enter Your Linkdin Link</label>
+    <input type="url" name="linkdin" id="linkdin" class="gp" placeholder="https://linkdin.com/prakash mondal" required>
+
+    <label for="clgname">Enter College Name</label>
+    <input type="text" name="clgname" id="clgname" class="gp" placeholder="Jalpaiguri Government Engineering College"
+      required>
+
+    <div class="clg_loc">
+      <div class="d">
+        <label for="dist">Enter College District :</label>
+        <input type="text" name="dist" id="dist" class="gp" placeholder="Jalpaiguri" required>
+      </div>
+      <div class="d">
+        <label for="state">Enter College State :</label>
+        <input type="text" name="state" id="state" class="gp" placeholder="West Bengal" required>
+      </div>
+      <div class="d">
+        <label for="country">Enter College Country :</label>
+        <input type="text" name="country" id="country" class="gp" placeholder="India" required>
+      </div>
+    </div>
+
+    <label for="degname">Enter Degree Name</label>
+    <input type="text" name="degname" id="degname" class="gp" placeholder="Bachelor of Technology" required>
+
+
+
+    <label for="coursename">Enter Department Name</label>
+    <input type="text" name="coursename" id="coursename" class="gp" placeholder="Computer Science and Engineering"
+      required>
+
+
+    <div class="clg_loc">
+      <div class="sed">
+        <label for="coursestartdate">Enter Course Start Date :</label>
+        <input type="date" name="coursestartdate" id="coursestartdate">
+      </div>
+
+      <div class="sed">
+        <label for="courseenddate">Enter Course End Date :</label>
+        <input type="date" name="courseenddate" id="courseenddate">
+      </div>
+    </div>
+
+    <label for="ygpa">Enter Your YGPA</label>
+    <input type="text" name="ygpa" id="ygpa" class="gp" placeholder="YGPA in 10.0 scale(e.g. 9.04)" required>
+    <!-- End of education section -->
+
+    <!-- Start of Experience section -->
+
+    <h2 style="text-align: center;">Experience/Internship Section</h2>
+    <div style="height: 10px;"></div>
+    <p class="pp">This section is not mandatory to fill out.</p>
+    <div style="height: 10px;"></div>
+    <div class="experience_section">
+      <div style="height: 10px;"></div>
+      <div class="experience_info">
+
+      </div>
+
+      <div style="height: 10px;"></div>
+      <div class="experience_btn">
+        <button class="projbtn add_experience">ADD Experience</button>
+
+        <button class="projbtn rem_experience">Remove Experience</button>
+      </div>
+    </div>
+
+
+    <!-- End of experience section -->
+
+    <!-- Project section -->
+    <h2 style="text-align: center;">Project Section</h2>
+    <div style="height: 10px;"></div>
+    <p class="pp">In this section, please provide a brief description of your project. Include details such as its
+      functionality,
+      features, the technologies used, and if applicable, share the deployed link or github repository link. </p>
+    <div style="height: 10px;"></div>
+    <div class="project_section">
+      <!-- <h4>Enter Project details</h4> -->
+      <div style="height: 10px;"></div>
+      <div class="project_info">
+
+      </div>
+
+      <div style="height: 10px;"></div>
+      <div class="proj_btn">
+        <button class="projbtn add_proj">ADD Project</button>
+
+        <button class="projbtn rem_proj">Remove Project</button>
+      </div>
+
+    </div>
+
+
+
+    <!-- End of project section -->
+
+    <!-- Start Skills section -->
+    <h2 style="text-align: center;">Technical Skills Section</h2>
+    <div style="height: 10px;"></div>
+    <div class="language_section">
+      <h4>Enter Programming Languages:</h4>
+      <div style="height: 10px;"></div>
+      <div class="inp">
+
+      </div>
+      <div style="height: 10px;"></div>
+      <div class="lang_btn">
+        <button class="achivbtn add_lang">ADD Languages</button>
+
+        <button class="achivbtn rem_lang">Remove Languages</button>
+      </div>
+    </div>
+
+    <br><br>
+    <!--Frame works  -->
+
+    <div class="language_section">
+      <h4>Enter Frameworks:</h4>
+      <div style="height: 10px;"></div>
+      <div class="Frameworks_container">
+
+      </div>
+      <div style="height: 10px;"></div>
+      <div class="lang_btn">
+        <button class="achivbtn add_frameworks">ADD Frameworks</button>
+
+        <button class="achivbtn rem_frameworks">Remove Frameworks</button>
+      </div>
+    </div>
+
+    <!-- Developer Tools -->
+
+    <div class="language_section">
+      <h4>Enter Developer Tools:</h4>
+      <div style="height: 10px;"></div>
+      <div class="Tools_container">
+
+      </div>
+      <div style="height: 10px;"></div>
+      <div class="lang_btn">
+        <button class="achivbtn add_tools">ADD Tools</button>
+
+        <button class="achivbtn rem_tools">Remove Tools</button>
+      </div>
+    </div>
+
+    <!-- End of skills section -->
+
+
+    <!-- Start of Achivements section -->
+
+    <h2 style="text-align: center;">Achivements Section</h2>
+    <div style="height: 10px;"></div>
+    <h4>Enter Your Achivements details</h4>
+    <div style="height: 10px;"></div>
+
+    <div class="achivcontainer">
+
+    </div>
+
+
+    <div class="btncontainer">
+      <button class="achivbtn add">ADD</button>
+
+      <button class="achivbtn remove">REMOVE</button>
+    </div>
+
+    <!-- End of Achivements section -->
+    <!-- start certification -->
+
+    <h2 style="text-align: center;">Certifications Section</h2>
+    <div style="height: 10px;"></div>
+    <p class="pp">This section is not mandatory to fill out.</p>
+    <h4>Enter Your certificate details</h4>
+    <div style="height: 10px;"></div>
+
+    <div class="certificatecontainer">
+
+    </div>
+
+
+    <div class="certibtncontainer">
+      <button class="certibtn certiadd">ADD</button>
+
+      <button class="certibtn certiremove">REMOVE</button>
+    </div>
+
+
+
+
+
+    <!-- end certification section -->
+
+    <!-- Codding Profiles -->
+
+    <h2 style="text-align: center;">Coding Profiles Section</h2>
+    <div style="height: 10px;"></div>
+    <p class="pp">This section is not mandatory to fill out.</p>
+    <h4>Enter Your Coding Profiles details</h4>
+    <div style="height: 10px;"></div>
+
+    <div class="codingprofilescontainer">
+
+    </div>
+
+
+    <div class="certibtncontainer">
+      <button class="profilebtn profileadd">ADD</button>
+
+      <button class="profilebtn profileremove">REMOVE</button>
+    </div>
+
+    <!-- End coding profiles -->
+
+    <input type="submit" value="Generate CV" class="btn" onclick="getInfo()">
+  </form>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

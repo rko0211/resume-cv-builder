@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+}
+
+:root {
+  --section: 14.5px;
+  --mheading: 13.2px;
+  --text: 12px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.pfname {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: var(--text);
+}
+
+.link {
+  color: green;
+  text-decoration: none;
+}
+
+.link1 {
+  color: blue;
+  text-decoration: none;
+}
+
+.edu {
+  font-weight: 500;
+  font-size: var(--section);
+}
+
+.college {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clgname {
+  font-weight: 600;
+  font-size: var(--mheading);
+}
+
+.clgloc {
+  font-size: var(--text);
+}
+
+.deg {
+  font-weight: 500;
+  font-size: var(--text);
+}
+
+.clgdur {
+  font-size: var(--text);
+}
+
+.course {
+  font-size: var(--text);
+}
+
+.ygpa {
+  font-size: var(--text);
+}
+
+.commonachivitem {
+  font-size: var(--text);
+  line-height: 15px;
+}
+
+.achivlink {
+  text-decoration: none;
+}
+
+.languages,
+.frameworks,
+.Tools {
+  font-size: var(--text);
+}
+
+.projectlist {
+  font-size: var(--text);
+}
+
+.projheadingDate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projname {
+  font-size: var(--mheading);
+  font-weight: bolder;
+}
+
+.projheadingDate {
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.projlink {
+  text-decoration: none;
+}
+
+.projpointDiv {
+  margin-bottom: 10px;
+}
+
+.gp {
+  height: 8px;
+}
+
+.exp {
+  font-weight: 500;
+  font-size: var(--section);
+}
+
+.expHeadingDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.expheading {
+  font-size: var(--mheading);
+  font-weight: bolder;
+}
+
+.expdate {
+  font-size: var(--text);
+}
+
+.orgnamelocation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orgnamediv {
+  font-size: var(--text);
+}
+
+.orglocation {
+  font-size: var(--text);
+}
+
+.expdetailsdiv {
+  margin-bottom: 10px;
+  font-size: var(--text);
+}
+
+.gphr {
+  height: 5px;
+}
+
+.certipoint {
+  font-size: var(--text);
+  line-height: 15px;
+}
+
+.certiurl {
+  text-decoration: none;
+  /* color: green; */
+}
+
+.projpoint {
+  line-height: 15px;
+}
+
+.point {
+  line-height: 15px;
+}
+
+.downbtn {
+  text-align: center;
+}
+
+.profilepoint {
+  font-size: var(--text);
+  line-height: 15px;
+}
+
+.profileurl {
+  text-decoration: none;
+}
+
+#download {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#download:hover {
+  background-color: #45a049;
+}
+
+
+
+.pp {
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 20px;
+  color: #1d1d1d;
+  max-width: max-content;
+  border: 1px solid #ddd;
+  margin: auto;
+  padding: 10px 20px;
+
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #f9f9f9;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
