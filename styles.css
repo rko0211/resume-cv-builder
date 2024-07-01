@@ -99,15 +99,15 @@ form {
 
 .addPoint {
   margin-top: 10px;
-  padding: 7px;
   margin-right: 10px;
   cursor: pointer;
   margin-bottom: 10px;
+  padding: 10px 20px;
 }
 
 .remPoint {
   margin-top: 10px;
-  padding: 7px;
+  padding: 10px 20px;
   cursor: pointer;
   margin-bottom: 10px;
   margin-left: 30px;
@@ -374,12 +374,14 @@ input[type="date"] {
   margin-left: 30px;
   margin-right: 10px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .remDetailBtn {
   padding: 5px;
   margin-bottom: 20px;
   margin-left: 30px;
+  margin-top: 10px;
 }
 
 .experience_btn {
@@ -924,4 +926,67 @@ h4 {
 
 .profileadd:hover {
   background-color: #218838;
+}
+
+/* Container for core subjects */
+.Coresubjectsoutercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Input styles */
+.commoninput {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 13px;
+  flex: 1;
+  min-width: 200px;
+  /* Minimum width to ensure inputs are readable */
+}
+
+/* Button styles */
+.achivbtn {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+}
+
+.achivbtn:hover {
+  background-color: #218838;
+}
+
+.rem_Coresubject {
+  background-color: #dc3545 !important;
+}
+
+.rem_Coresubject:hover {
+  background-color: #c82333 !important;
+}
+
+/* Add some spacing between elements */
+.language_section>div {
+  margin-bottom: 10px;
+}
+
+.certibtncontainer {
+  margin-top: 27px;
+}
+
+.add,
+.remove {
+  padding: 10px 20px;
+}
+
+.remove :hover {
+  background-color: #c82333 !important;
 }

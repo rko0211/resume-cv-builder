@@ -1090,3 +1090,68 @@ function addProfile(platform, url) {
 
   profileContainer.appendChild(profileDiv);
 }
+
+// Core subjects skills
+
+document.addEventListener("DOMContentLoaded", function () {
+  const coreSubjectsContainer = document.querySelector(".Coresubjectsoutercontainer");
+  const addSubjectBtn = document.querySelector(".add_Coresubject");
+  const removeSubjectBtn = document.querySelector(".rem_Coresubject");
+
+  // Load existing core subjects from local storage
+  loadSubjects();
+
+  // Add new core subject input field
+  addSubjectBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    addSubject("");
+  });
+
+  // Remove the last core subject input field
+  removeSubjectBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const subjects = coreSubjectsContainer.querySelectorAll(".coresubject");
+    if (subjects.length > 0) {
+      coreSubjectsContainer.removeChild(subjects[subjects.length - 1]);
+      saveSubjects();
+    }
+  });
+
+  // Save core subject data to local storage
+  function saveSubjects() {
+    const subjects = coreSubjectsContainer.querySelectorAll(".coresubject");
+    const data = Array.from(subjects).map(subject => {
+      return {
+        name: subject.querySelector("input[type='text']").value
+      };
+    });
+    localStorage.setItem("coreSubjects", JSON.stringify(data));
+  }
+
+  // Load core subject data from local storage
+  function loadSubjects() {
+    const data = JSON.parse(localStorage.getItem("coreSubjects")) || [];
+    data.forEach(item => {
+      addSubject(item.name);
+    });
+  }
+
+  // Add core subject input field
+  function addSubject(name) {
+    const subjectDiv = document.createElement("div");
+    subjectDiv.classList.add("coresubject");
+
+    const subjectInput = document.createElement("input");
+    subjectInput.type = "text";
+    subjectInput.required = true;
+    subjectInput.value = name;
+    subjectInput.placeholder = "Computer Network/DBMS";
+    subjectInput.classList.add("commoninput");
+    subjectDiv.appendChild(subjectInput);
+
+    // Save subjects whenever input fields change
+    subjectInput.addEventListener("input", saveSubjects);
+
+    coreSubjectsContainer.appendChild(subjectDiv);
+  }
+});

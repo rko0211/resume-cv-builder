@@ -556,6 +556,42 @@ if (profilesDataArray.length > 0) {
   }
 }
 
+// Core subjects
+let outerspecializedskills = document.querySelector(".outerspecializedskills");
+let specializedskills = document.createElement('p');
+specializedskills.className = "specializedskills";
+let coresubjectsDataString = localStorage.getItem("coreSubjects");
+let coresubjectsDataArray;
+
+if (coresubjectsDataString) {
+  coresubjectsDataArray = JSON.parse(coresubjectsDataString);
+} else {
+  coresubjectsDataArray = []; // Initialize with an empty array if no data is found
+}
+
+if (coresubjectsDataArray.length > 0) {
+  let div = document.createElement('div');
+  div.style.height = "6px";
+  let span = document.createElement('span');
+  span.textContent = "Specialized Knowledge:";
+  span.className = "sk";
+  specializedskills.appendChild(div);
+  specializedskills.appendChild(span);
+  specializedskills.appendChild(document.createTextNode(" "));
+  for (let i = 0; i < coresubjectsDataArray.length; i++) {
+    let itm = document.createElement('span');
+    itm.className = "commoncoresub";
+    itm.textContent = coresubjectsDataArray[i].name;
+    if (i !== coresubjectsDataArray.length - 1)
+      itm.appendChild(document.createTextNode(", "));
+
+    specializedskills.appendChild(itm);
+  }
+  outerspecializedskills.appendChild(specializedskills);
+}
+
+// END of core subject
+
 
 
 
