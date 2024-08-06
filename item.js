@@ -596,11 +596,26 @@ if (coresubjectsDataArray.length > 0) {
 
 
 
+
 function downloadCV() {
+
   let body = document.getElementById("body").innerHTML;
+
+  document.querySelector('.boldcntr').classList.add('hidden');
+  document.querySelector('.boldcntr2').classList.add('hidden2');
+  document.querySelector('.hidden').classList.remove('boldcntr');
+  document.querySelector('.hidden2').classList.remove('boldcntr2');
 
   let content = document.getElementById("content").innerHTML;
   document.getElementById("body").innerHTML = content;
   window.print();
+
+  document.querySelector('.hidden').classList.add('boldcntr');
+  document.querySelector('.boldcntr').classList.remove('hidden');
+  document.querySelector('.hidden2').classList.add('boldcntr2');
+  document.querySelector('.boldcntr2').classList.remove('hidden2');
   document.getElementById("body").innerHTML = body;
+
+
+
 }

@@ -235,3 +235,35 @@ body {
 .sk {
   font-weight: bold;
 }
+
+/* Styling for the editor button */
+.editor-btn {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Change background color when button is active */
+.editor-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.boldcntr,
+.boldcntr2 {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden2 {
+  display: none;
+}

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume</title>
   <link rel="stylesheet" href="item.css">
+
 </head>
 
 <body id="body">
@@ -51,7 +52,7 @@
 
     <!-- Start experience -->
 
-    <div class="outerexperiencediv">
+    <div class="outerexperiencediv" contenteditable="true">
 
     </div>
 
@@ -60,8 +61,15 @@
     <!-- Start Project -->
     <div style="height:7px;"></div>
     <h2 class="edu">PROJECTS</h2>
+
+
+    <div class="boldcntr">
+      <div style="font-size: 10px; color: red;"> Select some text and click the "B" button to toggle bold.</div>
+      <button id="toggle-bold-projbtn" class="editor-btn">B</button>
+    </div>
+
     <hr>
-    <div class="projectlist">
+    <div class="projectlist" contenteditable="true" id="editable-text">
 
     </div>
     <!-- End project -->
@@ -72,7 +80,7 @@
     <p class="languages"><span><b>Languages:</b></span>
     </p>
     <div style="height: 6px;"></div>
-    <p class="frameworks"><span><b>Frameworks:</b></span>
+    <p class="frameworks"><span><b>Technologies:</b></span>
     </p>
     <div style="height: 6px;"></div>
     <p class="Tools"><span><b>Developer Tools:</b></span>
@@ -84,9 +92,16 @@
 
     <div style="height:7px;"></div>
     <h2 class="edu">ACHIEVEMENTS</h2>
+
+    <div class="boldcntr2">
+      <div style="font-size: 10px; color: red;"> Select some text and click the "B" button to toggle bold.</div>
+      <button id="toggle-bold-achbtn" class="editor-btn">B</button>
+    </div>
+
     <hr>
     <div style="height: 5px;"></div>
-    <ul class="achivlist">
+
+    <ul class="achivlist" contenteditable="true" id="editable-text">
 
     </ul>
 
@@ -121,7 +136,7 @@
   </div>
 
 
-
+  <script src="Item_bold.js"></script>
   <script src="item.js"></script>
 </body>
 
