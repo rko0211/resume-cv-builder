@@ -17,7 +17,7 @@ document.querySelector(".pphone").textContent = param.get("phone");
 document.querySelector(".pemail").textContent = param.get("ename");
 document.querySelector(".pemail").href = `mailto: ${param.get("ename")}`
 
-document.querySelector(".plinkdin").textContent = `linkedin.com/${param.get("fname")}`;
+document.querySelector(".plinkdin").textContent = `linkedin.com/in/${param.get("fname")}`;
 document.querySelector(".plinkdin").href = `${param.get("linkdin")}`;
 
 document.querySelector(".pgithub").textContent = param.get("github");
